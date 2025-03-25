@@ -1,61 +1,462 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Meus discos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meus Discos</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="flex justify-center">
-        <table class="w-full md:w-3/4 border-collapse border border-gray-300">
-            <caption class="text-lg font-bold mb-4">Meus discos</caption>
-            <thead>
-                <tr>
-                    <!-- TH with dark background tailwind and font color light grey -->
-                    <th class="border p-3 border-gray-300 bg-gray-700 text-white">Artista(s)</th>
-                    <th class="border p-3 border-gray-300 bg-gray-700 text-white">Título</th>
-                    <th class="border p-3 border-gray-300 bg-gray-700 text-white">Formato</th>
-                    <th class="border p-3 border-gray-300 bg-gray-700 text-white">Observações</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-                <tr>
-                    <td class="border p-3 border-gray-300">Cher</td>
-                    <td class="border p-3 border-gray-300">Best Of</td>
-                    <td class="border p-3 border-gray-300">CD</td>
-                    <td class="border p-3 border-gray-300"></td>
-                </tr>
-                
-                <tr>
-                    <td class="border p-3 border-gray-300">Duran Duran</td>
-                    <td class="border p-3 border-gray-300">Rio</td>
-                    <td class="border p-3 border-gray-300">CD</td>
-                    <td class="border p-3 border-gray-300">Discaço</td>
-                </tr>
-                
-                <tr>
-                    <td class="border p-3 border-gray-300">Evil/Ravendark</td>
-                    <td class="border p-3 border-gray-300">Evil Night</td>
-                    <td class="border p-3 border-gray-300">CD</td>
-                    <td class="border p-3 border-gray-300">If you know what I mean</td>
-                </tr>
-                
-                <tr>
-                    <td class="border p-3 border-gray-300">KISS</td>
-                    <td class="border p-3 border-gray-300">Destroyer</td>
-                    <td class="border p-3 border-gray-300">CD</td>
-                    <td class="border p-3 border-gray-300">GOD OF THUNDEEEEEEER</td>
-                </tr>
-                
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4" class="border p-3 border-gray-300 bg-gray-700 text-white">Total: 4</td>
-                </tr>
-            </tfoot>
-        </table>
+<body class="bg-gray-100 p-8">
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-bold mb-6">Meus discos</h1>
+
+        <div class="overflow-x-auto bg-white rounded-lg shadow">
+            <table class="min-w-full">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Artista(s)</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Título</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Formato</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Observações</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Anthares</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">No Limite Da Força</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Bathory</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">The Return</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Bode Preto</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Inverted Blood</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Cannibal Corpse</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">The Wretched Spawn</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD + DVD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Caverna/Velho</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sob O Ciclo De Ouroboros</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Duran Duran</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Essential - Night Versions</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Duran Duran</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Essential - Night Versions</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD + DVD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Duran Duran</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Paper Gods</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Eternal Sacrifice</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Demongorgon - A History of Rites, Skulls, Serpents and Fire</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak, 2 CDs</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Funeratus</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Storm Of Vengeance/Echoes In Eternity</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak, 2 em 1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Gorement</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Within The Shadows Of Darkness</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak, 2 CDs</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Great Vast Forest</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">The Years Of Cold Winter And Darkness</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Great Vast Forest</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Battletales And Songs Of Steel</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak com Slipcase</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Kanvass</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Generation Of Deserters</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">King Diamond</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Them</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak, Réplica de LP</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Laconist</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Anticosmic Trance</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Marduk</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Panzer Division Marduk</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mercyful Fate</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mercyful Fate</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak, Réplica de LP</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Metraton</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Armies of Darkness Unite!</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Miasthenia</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">XVI/Batalha Ritual</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak, 2 CDs</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Miasthenia</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Antípodas</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Morbid Saint</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Spectrum Of Death</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak, 2 CDs</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Murder Rape</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Malum Absolutum</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Murder Rape</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Malum Absolutum</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Murder Rape</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Celebration Of Supreme Evil</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mystifier</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Demystifying The Mystified Ones</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mystifier</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Profanus</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mystifier</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Demo-nized</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mystifier</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">The World Is So good That Who Made It Doesn't Live Here</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mystifier</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Wicca</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mötley Crüe</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Theatre Of Pain</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mötley Crüe</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Girls, Girls, Girls</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mötley Crüe</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Feelgood</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mötley Crüe</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Too Fast For Love</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mötley Crüe</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Shout At The Devil</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Necrot</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">The Labyrinth</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Ocultan</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Old Times... Release of Demos</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Ocultan</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Bellicus Profanus/Regnus Ad Exus</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak, 2 em 1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Ocultan</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Quintessence</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Ocultan</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">The Coffin</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak formato de caixão</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Ocultan</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Lords Of Evil/The Coffin</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak, 2 em 1</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Pactum</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Summa Imperii Satanae 666</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Paradise Lost</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Lost Paradise</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Paradise Lost</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Host</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Patria</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Magna Adversia</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Patria</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Nihil Est Monastica</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Power From Hell</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Devil's Whorehouse</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Queiron</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">The Shepherd Of Tophet</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sargeist</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Satanic Black Devotion</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sargeist</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Disciple Of The Heinous Path</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Satyricon</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">The Shadowthrone</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Satyricon</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dark Medieval Times</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Selvageria</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Selvageria</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sepultura</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Schizophrenia</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sinister</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Hate</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Tezcatlipoca</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mexicatl</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Torture Squad</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Return Of Evil</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Triumph</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Imperium Lucifer</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Vazio</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Vazio</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Werewolf Bloodorder</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">The Rebirth Of The Night And The Fog</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Wolflust</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Satanic Megatons</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CD</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Digipak</td>
+                        </tr>
+                    
+                </tbody>
+                <tfoot class="bg-black">
+                    <tr>
+                        <td colspan="4" class="px-6 py-3 text-left text-xs font-medium text-gray-200 tracking-wider border-b">Total: 61</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 </body>
 </html>
